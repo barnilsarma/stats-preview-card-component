@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/barnilsarma/stats-preview-card-component/blob/main/favicon-32x32.png?raw=true">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+ <style>
+body{background-color:hsl(233, 47%, 7%);margin-left:60px;margin-right:60px;}
+main{display:flex;flex-direction:column;height:800px;background-color:hsl(244, 38%, 16%);border-radius:10px;justify-content:space-around;}
+.image-header-mobile{top:0px;visibility:visible;opacity:0.6;width:100%;height:100%;position:relative;border-radius:10px 10px 0px 0px;}
+.image-header-desktop{visibility:hidden;opacity:0.6;width:100%;height:100%;position:absolute;border-radius:0px 10px 10px 0px;}
+#image-holder{background-color:hsl(277, 80%, 40%);border-radius:10px 10px 0px 0px;}
+.content{position:relative;top:-40px;height:300px;justify-content:space-around;padding:30px 30px;display:flex;flex-direction:column;align-items:center;}
+.content #line-1{color:hsl(0, 0%, 100%);font-family:'Inter', sans-serif;font-weight:700;font-size:25px;text-align:center;}
+.content #line-2{text-align:center;color:hsla(0, 0%, 100%, 0.6);font-family:'Lexend Deca',sans-serif;font-weight:400;font-size:15px;}
+.details{display:flex;flex-direction:column;align-items:center;justify-content:space-around;}
+.number{color:hsla(0, 0%, 100%, 1);font-family:'Lexend Deca',sans-serif;font-size:24px;}
+.dsc{font-size:12px;font-family:'Lexend Deca',sans-serif;color:hsla(0, 0%, 100%, 0.6);text-transform:uppercase;}
+.details-box{display:flex;flex-direction:column;align:center;justify-content:space-around;width:100%;}
+@media only screen and (min-width:800px){
+main{flex-direction:row-reverse;}
+body{margin-top:100px;margin-bottom:100px;}
+main{height:80%;}
+.content{padding:100px 100px;}
+.content #line-1{text-align:left;}
+.content #line-2{text-align:left;}
+.details-box{display:flex;flex-direction:row;}
+#image-holder{width:1200px;border-radius:0px 10px 10px 0px;}
+.image-header-mobile{visibility:hidden;position:absolute;}
+.image-header-desktop{visibility:visible;position:relative;}
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+<div id="image-holder"><img src="https://github.com/barnilsarma/stats-preview-card-component/blob/main/image-header-mobile.jpg?raw=true" alt="image header mobile" class="image-header-mobile">
+<img src="https://github.com/barnilsarma/stats-preview-card-component/blob/main/image-header-desktop.jpg?raw=true" alt="image header desktop" class="image-header-desktop">
+</div>
+<br><div class="content">
+ <div id="line-1"> Get <b style="color:hsl(277, 64%, 61%);">insights</b> that help your business grow.</div>
+<br>
+<div id="line-2">  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</div>
+<br><div class="details-box">
+<div class="details"> <div class="number"> 10k+</div> <div class="dsc">companies</div></div>
+<br><div class="details"><div class="number">  314</div> <div class="dsc">templates</div></div>
+<br><div class="details"> <div class="number"> 12M+</div> <div class="dsc">queries</div></div>
+</div>
+</div>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/barnilsarma" target="_blank">Barnil Sarma</a>.
+  </div>
+</body>
+</html>
